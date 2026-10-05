@@ -1,217 +1,126 @@
-# Awesome-Laptop-Computer-Hardware
-
-## Top Laptop Computer Hardware Ecosystem
-
-**Curated List of Commercial Laptops & Open / Repairable / Open-Source Friendly Projects**
-
-*Focused on Premium Ultrabooks, Modular Designs, Repairability, Open Firmware & Linux-Friendly Hardware*
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial laptop hardware** and **open-source / repairable / open-firmware projects** in the laptop space. While most high-end laptops remain proprietary closed systems, a growing ecosystem of modular, repairable, and open-firmware machines exists alongside strong Linux support and community-driven firmware projects.
-
-
-
-**Examples** include Microsoft Surface Laptop, Apple MacBook Air, Dell XPS 13, Lenovo ThinkPad X1 Carbon, HP Spectre x360, ASUS Zenbook 14, Acer Swift Go, Razer Blade 14, LG Gram 14, and Framework Laptop (the category leaders and notable open-friendly options).
-
-
-
-**Open-source emphasis**: True open-source *hardware* laptops are rare. The strongest open-leaning options are **Framework Laptop** (highly modular and repairable), System76, Purism Librem, and open firmware projects such as **coreboot** and **Libreboot**. This section expands those while remaining realistic about the commercial dominance of closed designs.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-*(Adapted for hardware: Commercial / Proprietary Laptop Lines)*
-
-
-
-- **[Microsoft Surface Laptop](https://www.microsoft.com/surface)**  
-
-  Premium Windows ultrabook line with high build quality, touch options, and deep Microsoft ecosystem integration.
-
-
-
-- **[Apple MacBook Air](https://www.apple.com/macbook-air/)**  
-
-  Iconic thin-and-light laptop powered by Apple Silicon, known for battery life, performance, and macOS integration.
-
-
-
-- **[Dell XPS 13](https://www.dell.com/xps)**  
-
-  Premium Windows ultrabook celebrated for design, high-resolution displays, and strong performance in a compact chassis.
-
-
-
-- **[Lenovo ThinkPad X1 Carbon](https://www.lenovo.com/thinkpad)**  
-
-  Business-oriented ultralight laptop renowned for keyboard quality, durability, and enterprise features.
-
-
-
-- **[HP Spectre x360](https://www.hp.com/spectre)**  
-
-  Convertible premium laptop with high-end materials, OLED options, and versatile 2-in-1 form factors.
-
-
-
-- **[ASUS Zenbook 14](https://www.asus.com/zenbook)**  
-
-  Stylish thin-and-light series offering strong performance, OLED displays, and good portability.
-
-
-
-- **[Acer Swift Go](https://www.acer.com/)**  
-
-  Lightweight productivity-focused laptop line balancing performance, battery life, and competitive pricing.
-
-
-
-- **[Razer Blade 14](https://www.razer.com/gaming-laptops)**  
-
-  Compact high-performance gaming and creator laptop with powerful GPUs in a premium thin chassis.
-
-
-
-- **[LG Gram 14](https://www.lg.com/gram)**  
-
-  Ultra-lightweight laptop emphasizing extreme portability, long battery life, and solid productivity features.
-
-
-
-- **[Framework Laptop](https://frame.work/)**  
-
-  Modular, highly repairable laptop designed for upgradability, longevity, and user-serviceable components (stands out for openness and repairability).
-
-
-
-## Open-Source GitHub Projects
-
-- **[Framework Laptop (community & open aspects)](https://frame.work/)**  
-
-  Modular laptop with extensive repair guides, replacement modules, and strong community support; firmware and expansion ecosystem encouraged to be open.
-
-
-
-- **[coreboot](https://github.com/coreboot/coreboot)**  
-
-  Open-source firmware project that replaces proprietary BIOS/UEFI on supported hardware, improving transparency, security, and boot freedom.
-
-
-
-- **[Libreboot](https://github.com/libreboot/libreboot)**  
-
-  Free and open-source boot firmware distribution based on coreboot, focused on freedom and removal of proprietary blobs where possible.
-
-
-
-- **[System76 Open Firmware / Pop!_OS related](https://github.com/system76)**  
-
-  System76 develops open firmware for their laptops and maintains Linux-first hardware with strong upstream support.
-
-
-
-- **[Purism Librem hardware & PureOS](https://github.com/purism)**  
-
-  Privacy- and freedom-focused laptops with emphasis on free software, kill switches, and open hardware principles.
-
-
-
-- **[Linux laptop compatibility & hardware enablement projects](https://github.com/)**  
-
-  Community repositories tracking kernel support, drivers, and power management for various laptop models.
-
-
-
-- **[fwupd / LVFS](https://github.com/fwupd/fwupd)**  
-
-  Open-source firmware update daemon and Linux Vendor Firmware Service that enables safe firmware updates on many laptops.
-
-
-
-- **[Documentation and coreboot / Libreboot installation guides](https://coreboot.org/)**  
-
-  Resources for installing open firmware on supported devices and understanding hardware compatibility.
-
-
-
-- **[Repair and right-to-repair community projects](https://github.com/)**  
-
-  Guides, schematics sharing efforts, and advocacy projects supporting longer laptop lifespans and user repair.
-
-
-
-- **[Open-source laptop designs and RISC-V / alternative architecture experiments](https://github.com/)**  
-
-  Emerging community and academic projects exploring fully open hardware laptop designs (still early-stage).
-
-
-
-### Additional Strong Open-Source Options
-
-- Choosing **Framework Laptop** for maximum modularity, repairability, and upgrade path.
-
-- Running **coreboot** or **Libreboot** on supported hardware for open firmware.
-
-- Preferring vendors with strong Linux support and published schematics or repair manuals (System76, Purism, Framework).
-
-- Using **fwupd** for transparent firmware management on Linux.
-
-- Accepting that mass-market premium ultrabooks (Surface, MacBook, XPS, ThinkPad, Spectre, Zenbook, etc.) remain largely closed hardware with proprietary firmware and limited user repairability.
-
-- Focusing open efforts on repairability, firmware freedom, driver quality, and longevity rather than full open-source silicon.
-
-
-
-**Frameworks for building custom systems**: Select a modular or Linux-friendly laptop (Framework, System76, Purism) → install or verify open firmware where available → run a fully free OS → maintain with fwupd and community drivers. Suitable for users who value longevity, repair rights, and software freedom. Most consumers still choose polished commercial closed designs for convenience and performance.
-
-
-
-## How to Contribute
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's commercial hardware or open/repairable/open-firmware.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Laptop hardware involves electrical safety, warranty implications, and firmware risks. Installing open firmware can void warranties and brick devices if done incorrectly. This list is not purchasing or modification advice.
-
-
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Laptop Computer Hardware Banner" width="100%">
+</p>
+
+# 💻 Awesome Laptop Computer Hardware & Firmware Ecosystem ⚙️
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badg&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Linux Compatible](https://img.shields.io/badge/Linux-Compatible-blue.svg?logo=linux&logoColor=white)](https://kernel.org)
+[![Open Source Hardware](https://img.shields.io/badge/Open_Hardware-Friendly-success.svg)](https://www.oshwa.org/)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+
+> **A curated directory of commercial ultrabooks, modular repairable laptops, open-source hardware projects, open firmware (coreboot / Libreboot / Heads), and Linux hardware enablement tools.**
 
 ---
 
-**Made for hardware enthusiasts, Linux users, right-to-repair advocates, and open firmware supporters.**
+## 📑 Table of Contents
 
-Let's keep personal computing repairable, transparent, and as open as practical.
+- [📊 Market Overview & Valuation](#-market-overview--valuation)
+- [🏢 Commercial Laptops & Hardware Vendors](#-commercial-laptops--hardware-vendors)
+- [💻 Open-Source Projects & Firmware](#-open-source-projects--firmware)
+- [🎯 Key Hardware Selection Criteria](#-key-hardware-selection-criteria)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [⭐ Star History](#-star-history)
+
+---
+
+## 📊 Market Overview & Valuation
+
+> **Market Context:** The global laptop hardware market is estimated at approximately **\$160–180 billion** (with steady modest annual growth), and the sector is **moderately to highly concentrated** among top tier OEMs (e.g., Apple, Microsoft, Dell, HP, Lenovo, ASUS, Acer) operating alongside specialized niche segments like Framework and System76.
+
+---
+
+## 🏢 Commercial Laptops & Hardware Vendors
+
+The table below lists key commercial laptop product lines and vendors, sorted by **Company Valuation / Annual Revenue** in descending order.
+
+| Brand / Product Line | Company / Vendor | Market Valuation / Annual Revenue | Starting Price | Free Tier / Trial Limit | Key Features & Openness |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Apple MacBook Air](https://www.apple.com/macbook-air/)** | Apple Inc. | **\$3.4 Trillion** (Valuation) / **\$385B** (Rev) | \$999 (M2/M3 Air 13") | 90 Days Free AppleCare / 14-Day Return Window | Industry-leading battery life, Apple Silicon, macOS integration, proprietary hardware. |
+| **[Microsoft Surface Laptop](https://www.microsoft.com/surface)** | Microsoft Corp. | **\$3.1 Trillion** (Valuation) / **\$245B** (Rev) | \$999 (Surface Laptop 7th Ed) | 30 Days Free Microsoft 365 Trial / 60-Day Return | Premium Windows ultrabook, PixelSense touch display, Copilot+ PC features. |
+| **[Lenovo ThinkPad X1 Carbon](https://www.lenovo.com/thinkpad)** | Lenovo Group | **\$14 Billion** (Valuation) / **\$62B** (Rev) | \$1,349 (Gen 12) | 30 Days Lenovo Smart Performance Trial | Business benchmark, ultra-light carbon fiber build, official Linux options (Fedora/Ubuntu). |
+| **[Dell XPS 13](https://www.dell.com/xps)** | Dell Technologies | **\$85 Billion** (Valuation) / **\$88B** (Rev) | \$1,299 (XPS 13 Snapdragon/Intel) | 30 Days Dell Migrate / Premium Support Trial | Compact InfinityEdge display, CNC aluminum chassis, Developer Edition Linux support. |
+| **[HP Spectre x360](https://www.hp.com/spectre)** | HP Inc. | **\$35 Billion** (Valuation) / **\$53B** (Rev) | \$1,199 (Spectre x360 14") | 30 Days HP SmartFriend & Wolf Security Trial | Premium 2-in-1 convertible, 2.8K OLED touch screen, sleek gem-cut chassis. |
+| **[ASUS Zenbook 14](https://www.asus.com/zenbook)** | ASUSTeK Computer | **\$12 Billion** (Valuation) / **\$15B** (Rev) | \$799 (Zenbook 14 OLED) | 30 Days ASUS WebStorage 100GB Trial | High-value thin & light, Lumina OLED displays, strong performance per dollar. |
+| **[LG Gram 14](https://www.lg.com/gram)** | LG Electronics | **\$10 Billion** (Valuation) / **\$65B** (Rev) | \$1,099 (Gram 14 Ultra-light) | 30 Days LG Glance by Mirametrix Trial | Under 1kg featherweight build, long battery life, military-grade durability. |
+| **[Acer Swift Go](https://www.acer.com/)** | Acer Inc. | **\$3.5 Billion** (Valuation) / **\$8.5B** (Rev) | \$649 (Swift Go 14) | 30 Days Acer Care Center / Norton Trial | Budget productivity ultrabook, OLED options, good I/O selection. |
+| **[Razer Blade 14](https://www.razer.com/gaming-laptops)** | Razer Inc. | **\$3.0 Billion** (Valuation) / **\$1.6B** (Rev) | \$1,999 (Blade 14 RTX 4070) | 14 Days Razer Synapse Pro Trial / 14-Day Return | Ultra-compact gaming & creator laptop, CNC aluminum, high-refresh display. |
+| **[System76 Pangolin / Lemur](https://system76.com/laptops)** | System76, Inc. | **\$50 Million** (Private Est.) / **\$30M** (Rev) | \$999 (Lemur Pro) | 30 Days Pop!_OS Technical Support & 30-Day Return | Open-source coreboot firmware, Pop!_OS Linux pre-installed, repair-friendly design. |
+| **[Purism Librem 14](https://puri.sm/products/librem-14/)** | Purism PBC | **\$25 Million** (Private Est.) / **\$15M** (Rev) | \$1,370 (Librem 14) | 30 Days PureOS Support / 30-Day Money-Back Guarantee | Hardware kill switches for webcam/mic/WiFi, PureBoot open firmware, PureOS. |
+| **[Framework Laptop 13 / 16](https://frame.work/)** | Framework Computer Inc. | **\$20 Million** (Private Est.) / **\$40M** (Rev) | \$899 (DIY Edition 13) | 30 Days Return Window / 100% Free Open Schematics Access | Fully modular, user-repairable, customizable Expansion Cards, open mainboard schematics. |
+
+---
+
+## 💻 Open-Source Projects & Firmware
+
+Open-source firmware, utilities, and software enablement projects sorted by **GitHub Stars** (descending).
+
+| Project / Repository | Star Count | License | Primary Category | Key Purpose & Highlights |
+| :--- | :---: | :--- | :--- | :--- |
+| **[qemu / qemu](https://github.com/qemu/qemu)** | [![GitHub Stars](https://img.shields.io/github/stars/qemu/qemu?style=social&color=white)](https://github.com/qemu/qemu/stargazers) | GPL-2.0 | Emulation & Virtualization | Generic open-source machine emulator and virtualizer used to test laptop firmware and operating systems. |
+| **[u-boot / u-boot](https://github.com/u-boot/u-boot)** | [![GitHub Stars](https://img.shields.io/github/stars/u-boot/u-boot?style=social&color=white)](https://github.com/u-boot/u-boot/stargazers) | GPL-2.0 | ARM / RISC-V Firmware | Primary boot loader for embedded laptop architectures, ARM laptops, and RISC-V development boards. |
+| **[AdnanHodzic / auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq)** | [![GitHub Stars](https://img.shields.io/github/stars/AdnanHodzic/auto-cpufreq?style=social&color=white)](https://github.com/AdnanHodzic/auto-cpufreq/stargazers) | LGPL-3.0 | Power Management | Automatic CPU speed & power optimizer for Linux laptops to extend battery life without thermal throttling. |
+| **[tianocore / edk2](https://github.com/tianocore/edk2)** | [![GitHub Stars](https://img.shields.io/github/stars/tianocore/edk2?style=social&color=white)](https://github.com/tianocore/edk2/stargazers) | BSD-2-Clause-Patent | UEFI Firmware | Modern cross-platform firmware development environment serving as the foundation for UEFI on laptops. |
+| **[fwupd / fwupd](https://github.com/fwupd/fwupd)** | [![GitHub Stars](https://img.shields.io/github/stars/fwupd/fwupd?style=social&color=white)](https://github.com/fwupd/fwupd/stargazers) | LGPL-2.1 | Firmware Management | Linux Vendor Firmware Service (LVFS) daemon enabling safe automatic BIOS & device firmware updates on laptops. |
+| **[linrunner / TLP](https://github.com/linrunner/TLP)** | [![GitHub Stars](https://img.shields.io/github/stars/linrunner/TLP?style=social&color=white)](https://github.com/linrunner/TLP/stargazers) | GPL-2.0 | Battery & Power Optimization | Advanced feature-rich commandline power management utility for Linux laptops to optimize battery consumption. |
+| **[coreboot / coreboot](https://github.com/coreboot/coreboot)** | [![GitHub Stars](https://img.shields.io/github/stars/coreboot/coreboot?style=social&color=white)](https://github.com/coreboot/coreboot/stargazers) | GPL-2.0 | Open Boot Firmware | Open-source BIOS replacement focusing on lightning-fast boot speed, security transparency, and user freedom. |
+| **[osresearch / heads](https://github.com/osresearch/heads)** | [![GitHub Stars](https://img.shields.io/github/stars/osresearch/heads?style=social&color=white)](https://github.com/osresearch/heads/stargazers) | GPL-2.0 | Secure Open Firmware | Security-oriented coreboot payload using TPM and GPG keys to detect tampering of laptop BIOS and OS kernel. |
+| **[system76 / firmware-open](https://github.com/system76/firmware-open)** | [![GitHub Stars](https://img.shields.io/github/stars/system76/firmware-open?style=social&color=white)](https://github.com/system76/firmware-open/stargazers) | GPL-3.0 | OEM Firmware | System76's official open-source coreboot build system and custom EC firmware for Linux laptops. |
+| **[t2linux / linux-t2-patches](https://github.com/t2linux/linux-t2-patches)** | [![GitHub Stars](https://img.shields.io/github/stars/t2linux/linux-t2-patches?style=social&color=white)](https://github.com/t2linux/linux-t2-patches/stargazers) | GPL-2.0 | Hardware Enablement | Linux kernel patches and driver modules enabling native Linux operation on Apple Silicon & T2 Intel MacBooks. |
+| **[FrameworkComputer / Mainboard](https://github.com/FrameworkComputer/Mainboard)** | [![GitHub Stars](https://img.shields.io/github/stars/FrameworkComputer/Mainboard?style=social&color=white)](https://github.com/FrameworkComputer/Mainboard/stargazers) | CC-BY-4.0 | Open Schematics | CAD drawings, pinouts, 3D printable files, and electrical schematics for Framework Laptop mainboards. |
+
+---
+
+## 🎯 Key Hardware Selection Criteria
+
+When evaluating laptops for open-source friendliness, repairability, and Linux compatibility, consider:
+
+1. **🔒 Firmware Freedom**: Look for machines supported by [coreboot](https://github.com/coreboot/coreboot) or [fwupd/LVFS](https://github.com/fwupd/fwupd) to avoid proprietary binary blobs and unpatchable BIOS vulnerabilities.
+2. **🛠️ Component Modularity**: Choose devices with socketed RAM (SO-DIMM / CAMM2), standard M.2 NVMe slots, replaceable Wi-Fi cards, and user-serviceable batteries (e.g., Framework Laptop).
+3. **🛡️ Hardware Kill Switches & Privacy**: Security-conscious users should consider Purism Librem devices featuring physical switches for micro-phones, cameras, and wireless cards.
+4. **🐧 Linux Out-of-the-Box**: System76, Lenovo ThinkPads (Fedora/Ubuntu editions), Dell XPS Developer Edition, and Framework offer validated Linux driver support.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Please follow these simple guidelines:
+
+1. 🍴 Fork this repository.
+2. 📝 Ensure new hardware entries follow the tabular format with specific pricing, company size, and free trial info.
+3. ⭐ For open-source GitHub projects, add standard social star badges pointing directly to the `/stargazers` page.
+4. 🚀 Submit a Pull Request with a clear description of your additions.
+
+---
+
+## ☕ Support & Sponsorship
+
+Thank you for exploring this repository! If you find this curated hardware guide helpful, please consider supporting the project:
+
+- ⭐ **Star** this repository to help others discover it!
+- 🍴 **Fork** it to share your own customizations.
+- 📢 **Share** it with fellow Linux and open-hardware enthusiasts.
+- 💖 **Sponsor / Buy me a coffee**: Support ongoing open-source development and maintenance via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for research and educational purposes.
+- Installing third-party bootloaders (e.g., coreboot, Heads, Libreboot) may void manufacturer warranties or brick hardware if improperly flashed. Proceed with appropriate caution.
+
+---
+
+## ⭐ Star History
+
+[![tStar History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Laptop-Computer-Hardware&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Laptop-Computer-Hardware&type=date&legend=top-left)
+
+---
+
+<p align="center">
+  <sub>Maintained with ❤️ for open hardware advocates, coreboot enthusiasts, and Linux laptop users worldwide.</sub>
+</p>
