@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="50%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#090d12"/>
+    </linearGradient>
+    
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#bc8cff"/>
+      <stop offset="100%" stop-color="#3fb950"/>
+    </linearGradient>
+
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      .title { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 42px; fill: #ffffff; }
+      .subtitle { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 400; font-size: 20px; fill: #8b949e; }
+      .badge-text { font-family: monospace; font-size: 13px; font-weight: 600; fill: #58a6ff; }
+      
+      @keyframes floatSlow {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+      
+      @keyframes pulseGlow {
+        0% { opacity: 0.3; }
+        50% { opacity: 0.7; }
+        100% { opacity: 0.3; }
+      }
+
+      @keyframes dashAnim {
+        to { stroke-dashoffset: -40; }
+      }
+
+      .floating-card { animation: floatSlow 6s ease-in-out infinite; }
+      .pulsing-glow { animation: pulseGlow 4s ease-in-out infinite; }
+      .animated-circuit { stroke-dasharray: 8 8; animation: dashAnim 2s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)"/>
+  <rect width="1200" height="360" rx="16" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <!-- Background Dynamic Circuit Patterns (Behind Text) -->
+  <g stroke="#30363d" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M 100,0 L 100,80 L 180,160 L 180,360" />
+    <path d="M 1050,0 L 1050,120 L 950,220 L 950,360" />
+    <circle cx="180" cy="160" r="4" fill="#30363d" />
+    <circle cx="950" cy="220" r="4" fill="#30363d" />
+  </g>
+
+  <g class="animated-circuit" stroke="#58a6ff" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M 0,100 L 250,100 L 320,170" />
+    <path d="M 1200,260 L 980,260 L 900,180" />
+  </g>
+
+  <!-- Animated Glowing Spheres in Background -->
+  <circle class="pulsing-glow" cx="950" cy="120" r="140" fill="url(#glow-grad)" filter="url(#glow)" />
+  <circle class="pulsing-glow" cx="200" cy="260" r="100" fill="url(#glow-grad)" filter="url(#glow)" />
+
+  <!-- Background Dynamic Microchip Illustration (Right Side - Low Opacity / Non-interfering) -->
+  <g transform="translate(860, 80)" class="floating-card" opacity="0.85">
+    <!-- Outer Chip Frame -->
+    <rect x="0" y="0" width="220" height="180" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <rect x="15" y="15" width="190" height="150" rx="8" fill="#0d1117" stroke="#58a6ff" stroke-width="1" stroke-dasharray="4 4"/>
+    
+    <!-- Chip Cores -->
+    <rect x="35" y="35" width="65" height="50" rx="4" fill="#21262d" stroke="#bc8cff" stroke-width="1"/>
+    <text x="67" y="65" font-family="monospace" font-size="11" fill="#bc8cff" text-anchor="middle">CPU</text>
+
+    <rect x="120" y="35" width="65" height="50" rx="4" fill="#21262d" stroke="#3fb950" stroke-width="1"/>
+    <text x="152" y="65" font-family="monospace" font-size="11" fill="#3fb950" text-anchor="middle">GPU</text>
+
+    <rect x="35" y="98" width="150" height="40" rx="4" fill="#21262d" stroke="#58a6ff" stroke-width="1"/>
+    <text x="110" y="123" font-family="monospace" font-size="11" fill="#58a6ff" text-anchor="middle">Open Firmware / NPU</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Badges, Title & Subtitle -->
+  
+  <!-- Category Pill / Badge -->
+  <g transform="translate(75, 55)">
+    <rect width="250" height="30" rx="15" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+    <circle cx="18" cy="15" r="5" fill="#3fb950"/>
+    <text x="32" y="20" class="badge-text">LAPTOP HARDWARE &amp; FIRMWARE</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="75" y="140" class="title">Awesome Laptop Computer Hardware</text>
+
+  <!-- Top Accent Bar under Title -->
+  <rect x="75" y="160" width="480" height="4" rx="2" fill="url(#accent-grad)"/>
+
+  <!-- Subtitle Line 1 -->
+  <text x="75" y="205" class="subtitle">Curated directory of commercial ultrabooks, modular laptops,</text>
+  
+  <!-- Subtitle Line 2 -->
+  <text x="75" y="235" class="subtitle">open-source hardware, repairable designs &amp; open firmware (coreboot/LVFS).</text>
+
+  <!-- Key Tags / Pills at Bottom -->
+  <g transform="translate(75, 275)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="110" height="26" rx="6" fill="#21262d"/>
+    <text x="55" y="17" font-family="sans-serif" font-size="12" fill="#c9d1d9" text-anchor="middle">💻 Ultrabooks</text>
+
+    <!-- Tag 2 -->
+    <rect x="120" y="0" width="125" height="26" rx="6" fill="#21262d"/>
+    <text x="182" y="17" font-family="sans-serif" font-size="12" fill="#c9d1d9" text-anchor="middle">⚙️ Coreboot / BIOS</text>
+
+    <!-- Tag 3 -->
+    <rect x="255" y="0" width="135" height="26" rx="6" fill="#21262d"/>
+    <text x="322" y="17" font-family="sans-serif" font-size="12" fill="#c9d1d9" text-anchor="middle">🛠️ Modular &amp; Repair</text>
+
+    <!-- Tag 4 -->
+    <rect x="400" y="0" width="110" height="26" rx="6" fill="#21262d"/>
+    <text x="455" y="17" font-family="sans-serif" font-size="12" fill="#c9d1d9" text-anchor="middle">🐧 Linux Ready</text>
+  </g>
+
+</svg>
